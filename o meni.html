@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SJENICA </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sjenica.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="opste">
+        <div class="op1">
+            <img alt="Loading logo" src="slike/logo.png"></div>
+        <div clas="op2">
+            <a href="o meni.html" active> <button class="btn-dark" style="width: 30px;height: 20px; background-image:url(slike/sr.png); background-repeat: no-repeat;margin-top: 10px; margin-left: 360px;"></button></a>
+            <a href="aboutme.html"> <button class="btn-dark" style="width: 30px; height:20px; background-image:url(slike/en.png); background-repeat: no-repeat;"></button></a>
+
+        </div>
+    </div>
+    <div class="nav">
+        <a href="index.html">Početna</a>
+        <a href="istorija.html">Istorija</a>
+        <a href="kultura.html">Kultura</a>
+        <a href="obrazovanje.html">Obrazovanje</a>
+        <a href="sporrtt.html">Sport</a>
+        <a href="sta posetiti.html">Šta posetiti</a>
+        <a href="o meni.html" class="active">O meni</a>
+    </div>
+    <div class="zadnja">
+        <hr class="float:left">
+        <i class="float: center>">O meni</i>
+        <hr class="float:right">
+    </div>
+    <div class="omeni">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slike/ja.jpeg" alt="ja" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Dinela Ganović</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="slike/ja1.jpg" alt="ja" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h4> Sudent softverskog inzenjersva!</h4>
+                        <p> Druga godina studija.</p>
+                        <p> Imam 20 godina.</p>
+                        <p> U slobodno vreme volim da čitam knjige.</p>
+                        <p> Ljubitelj sam mačaka!</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="omeni">
+        <div class="omeni2">
+            <table>
+                <tr>
+                    <th><i class="fas fa-home mr-3"></i></th>
+                    <th> <i>Sjenica, Srbija</i></th>
+                </tr>
+                <tr>
+                    <td><i onclick="sendemail()" id=mail class="fas fa-envelope mr-3"></i></td>
+                    <td><i><b onclick="sendemail()" id=mail> dinelaganovic99@gmali.com </b></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone mr-3"></i></td>
+                    <td><i><b>+381 64 41* ** **</b></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="zadnja">
+        <hr class="float:left">
+        <i class="float: center>">Kontakt</i>
+        <hr class="float:right">
+    </div>
+    <div class="kontakt">
+        <form name="myform" onsubmit="return validateform()" action="#" method="post">
+            <label>Ime i prezime <b style="color: red;">*</b></label>
+            <input style=" text-align: center;" onkeyup="prvimpr(this)" onblur="prvimpr(this)" type="text" name="name" minlength="9" placeholder="Imee Prez" title=" Ime i prezime(sa najmanje 4 karktera) moraju da počinju velikim slovom i da budu odvojeni razmakom!">
+            <b><p id="namerror1" style=" padding: 150px auto;font-family: 'Times New Roman', Times, serif; text-align: center; width: 800px; font-size: 14px; color:rgba(253, 5, 5, 0.911);"></p></b>
+            <label>E-pošta <b style="color: red;">*</b></label>
+            <input style="text-align: center;" type="text" onkeyup="mail(this)" onblur="mail(this)" name="email" placeholder="Em99_A@Gmail.Com/NP.Ac.Rs" title="Email adresa mora da ima 6 karaktera koji su velika ili mala slova,cifre ili donja crta,pre znaka @ mora da bude slovo!">
+            <b><p id="namerror2" style="font-family: 'Times New Roman', Times, serif; padding: 150px auto; text-align: center; width: 800px; font-size: 14px; color:rgba(253, 5, 5, 0.911);"></p></b>
+            <label>Zemlja</label>
+            <select type="text" name="country">
+                <option value=""> Srbija</option>
+                <option value="bih">BiH</option>
+                <option value=""> Makedonija</option>
+                <option value=""> Rumunija</option>
+                <option value="usa">USA</option>
+                <option value=""> Albanija</option>
+                <option value="">...</option>
+              </select>
+            <label>Upišite komentar <b style="color: red;">*</b></label>
+            <textarea name="textarea" placeholder="Poruka" onkeyup="por(this)" onblur="por(this)" maxlength="500" title="Max dužina poruke 500 karaktera, bez cifara!"></textarea>
+            <b><p id="namerror3" style="font-family: 'Times New Roman', Times, serif; padding: 150px auto; text-align: center; width: 800px; font-size: 14px;color:rgba(253, 5, 5, 0.911); "></p></b>
+            <div class="error">
+                <p id="namerror" style="font-style: italic; padding: 5px auto; text-align: center; width: 800px; background-color: rgb(172, 142, 142);font-size: 19px; color: rgb(223, 6, 6);"></p>
+            </div>
+            <center> <input type="submit" value="Pošalji" style="width: 200px;
+                height: 50px;
+                background-color: black;
+                color: white;
+                border-radius: 3px;
+                font-size: 16px;"></center>
+        </form>
+    </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Idi na vrh"><i class="fa fa-angle-up " id="yui_3_17_2_2_1585513093349_159"></i></button>
+    <footer>
+        <div class="footer-copyright text-center py-3">Copyright © SJENICA 2020</div>
+    </footer>
+    <script src="prvi.js"></script>
+    <script src="drugi.js"></script>
+</body>
+
+</html>

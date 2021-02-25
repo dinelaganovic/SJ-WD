@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SJENICA </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sjenica.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="opste">
+        <div class="op1">
+            <img alt="Loading logo" src="slike/logo.png"></div>
+        <div clas="op2">
+            <a href="sporrtt.html"> <button class="btn-dark" style="width: 30px;height: 20px; background-image:url(slike/sr.png); background-repeat: no-repeat;margin-top: 10px; margin-left: 360px;"></button></a>
+            <a href="Sport.html" active><button class="btn-dark" style="width: 30px; height:20px; background-image:url(slike/en.png); background-repeat: no-repeat;"></button></a>
+            <div style="display:flex; width: 250px; margin-left: 735px; padding: 10px; background-color: white;">
+                <form class="header-search" id="nav-main-search" method="get" role="search">
+                    <label for="main-q" class="visually-hidden"><i  style="padding-top: 5px;" class="fas fa-search" aria-hidden="true"></i></label>
+                    <input type="search" ondragenter="pretrazi()" class="search-input-field" id="main-q" name="q" placeholder="Search" title="Search a page">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="indeks.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="culture.html">Culture</a>
+        <a href="education.html">Education</a>
+        <a href="Sport.html" class="active">Sport</a>
+        <a href="whatvisit.html">What to visit</a>
+        <a href="aboutme.html">About me</a>
+    </div>
+    <div class="galerija">
+        <div class="container">
+            <img alt="" src="slike/rukometasi.jpg">
+            <div class="text-block">
+                <a href="#">
+                    <p>Handball club "Sjenica"</p>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <img alt="kksj" src="slike/kksjenica.jpg">
+            <div class="text-block">
+                <a href="https://sr-rs.facebook.com/KkSjenica">
+                    <p>Basketball club "Sjenica"</p>
+                </a>
+            </div>
+        </div>
+        <div class="container"> <img alt="" src="slike/odbojka.jpg">
+            <div class="text-block">
+                <a href="https://www.facebook.com/zok.sjenica.7/">
+                    <p>Women's Volleyball club </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="galerija">
+        <div class="container">
+            <img alt="kksj" src="slike/sloga.jpg">
+            <div class="text-block">
+                <a href="https://sr-rs.facebook.com/FK-Sloga-Sjenica-Zvani%C4%8Dna-stranica-479730415456471/">
+                    <p>Football club </p>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <img alt="kksj" src="slike/karate.jpg">
+            <div class="text-block">
+                <a href="https://www.facebook.com/sampionsjenica/">
+                    <p>Judo club </p>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <img alt="kksj" src="slike/skijas.jpg">
+            <div class="text-block">
+                <a href="#">
+                    <p>Ski club </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="galerija">
+        <div class="container">
+            <div class="pr"> </div>
+            <h3> Successful athletes</h3>
+            <table class="table table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th>Name and surname</th>
+                        <th>Success</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Muamer Hukic</td>
+                        <td>Boxer, multiple world champion</td>
+                    </tr>
+                    <tr>
+                        <td>Asmir Kolasinac</td>
+                        <td>Athlete, European Indoor Champion</td>
+                    </tr>
+                    <tr>
+                        <td>Sacir Dzeko</td>
+                        <td>Olympian, gold medalist in archery</td>
+                    </tr>
+                    <tr>
+                        <td>Radojko Avramovic</td>
+                        <td>Soccer player</td>
+                    </tr>
+                    <tr>
+                        <td>Amar Garibovic</td>
+                        <td>Nordic skier</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="galerija">
+        <div class="pr"></div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up " id="yui_3_17_2_2_1585513093349_159"></i></button>
+
+    <footer>
+        <div class="footer-copyright text-center py-3">Copyright © SJENICA 2020</div>
+    </footer>
+</body>
+<script src="drugi.js"></script>
+
+</html>
